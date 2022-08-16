@@ -6,15 +6,14 @@ function handleError(error) {
   throw new Error(chalk.red(error.code, "there isn't archive in the path"));
 }
 
-function getArchive(archivePath) {
+async function getArchive(archivePath) {
   const encoding = "utf-8";
-  fs.readFile(archivePath, encoding, (error, data) => {
-    if (error) {
-      handleError(error);
-    }
-
+  try {
+    const data = await fs.promises.readFile(archivePath, encoding);
     console.log(chalk.green(data));
-  });
+  } catch (error) {
+    handleError(error);
+  }
 }
 
 getArchive("./archives/text1.md");
