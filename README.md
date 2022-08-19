@@ -10,5 +10,5 @@
 - [ ] Aplicar testes unitários.
 
 <h4 align="center"> 
-	🚧  Captura de links 🚀 Em construção...  🚧
+	🚧  Validação de links 🚀 Em construção...  🚧
 </h4>
