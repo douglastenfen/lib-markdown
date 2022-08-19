@@ -11,7 +11,7 @@ function linkExtract(text) {
     resultArray.push({ [temp[1]]: temp[2] });
   }
 
-  return resultArray;
+  return resultArray.length === 0 ? "There aren't links" : resultArray;
 }
 
 function handleError(error) {
@@ -22,10 +22,10 @@ async function getArchive(archivePath) {
   const encoding = "utf-8";
   try {
     const data = await fs.promises.readFile(archivePath, encoding);
-    console.log(linkExtract(data));
+    return linkExtract(data);
   } catch (error) {
     handleError(error);
   }
 }
 
-getArchive("./archives/text1.md");
+module.exports = getArchive;
