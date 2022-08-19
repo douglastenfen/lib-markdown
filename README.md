@@ -4,9 +4,10 @@
 ### Features
 - [x] Instalação das dependências.
 - [x] Adicionar promises com Async/Await
-- [ ] Fazer captura de links com RegExp.
+- [x] Fazer captura de links com RegExp.
+- [x] Adicionar usabilidade por linha de comando.
 - [ ] Validar links.
-- [ ] Aplicar testes unitários
+- [ ] Aplicar testes unitários.
 
 <h4 align="center"> 
 	🚧  Captura de links 🚀 Em construção...  🚧
