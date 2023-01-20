@@ -1,6 +1,6 @@
 # lib-markdown
 
-## Criação de uma lib ppegar links em arquivos _markdown_. O código está sendo feito a partir do curso **NodeJS: Criando sua Biblioteca** da **Alura**.
+## Criação de uma lib para pegar links em arquivos _markdown_. O código está sendo feito a partir do curso **NodeJS: Criando sua Biblioteca** da **Alura**.
 
 ### Abordagens no código
 
@@ -23,4 +23,4 @@ $ cd lib-markdown
 $ npm install
 
 #### Para rodar a aplicação
-Basta rodar no terminal <$ npm run cli validate> e os arquivos que vão estar dentro da pasta archives na raíz do projeto terão seus links validados
+Basta rodar no terminal `$ npm run cli validate` e os arquivos que vão estar dentro da pasta archives na raíz do projeto terão seus links obtidos.
